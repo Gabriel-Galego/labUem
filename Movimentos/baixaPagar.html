@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-  <link rel="stylesheet" type="text/css" href="./css/index.css" />
+  <link rel="stylesheet" type="text/css" href="../css/index.css" />
 </head>
 
 <body>
@@ -49,27 +49,27 @@
       <ul class="sidenav sidenav-fixed blue lighten-4 collapsible" id="slide-out" style="text-align: left">
         <div class="divider"></div>
         <li>
-          <a href="./login.html" class="black-text">Entrar<i class="material-icons blue-text">login</i></a>
+          <a href="../login.html" class="black-text">Entrar<i class="material-icons blue-text">login</i></a>
         </li>
         <li>
           <div class="collapsible-header" style="margin-left: 15px"><i
               class="material-icons blue-text">create</i>Cadastros
           </div>
-          <div class="collapsible-body blue"><a href="./Cadastros/usuario.html" class="white-text"
+          <div class="collapsible-body blue"><a href="../Cadastros/usuario.html" class="white-text"
               style="margin-left: 45px"><span>Usuários</span></a></div>
-          <div class="collapsible-body blue"><a href="./Cadastros/empresas.html" class="white-text"
+          <div class="collapsible-body blue"><a href="../Cadastros/empresas.html" class="white-text"
               style="margin-left: 45px"><span>Empresas</span></a></div>
-          <div class="collapsible-body blue"><a href="./Cadastros/planodeContas.html" class="white-text"
+          <div class="collapsible-body blue"><a href="../Cadastros/planodeContas.html" class="white-text"
               style="margin-left: 45px"><span>Plano de
                 Contas</span></a></div>
-          <div class="collapsible-body blue"><a href="./Cadastros/clientes.html" class="white-text"
+          <div class="collapsible-body blue"><a href="../Cadastros/clientes.html" class="white-text"
               style="margin-left: 45px"><span>CLientes</span></a></div>
-          <div class="collapsible-body blue"><a href="./Cadastros/Fornecedores.html" class="white-text"
+          <div class="collapsible-body blue"><a href="../Cadastros/Fornecedores.html" class="white-text"
               style="margin-left: 45px"><span>Fornecedores</span></a></div>
-          <div class="collapsible-body blue"><a href="./Cadastros/formasdePagamento.html" class="white-text"
+          <div class="collapsible-body blue"><a href="../Cadastros/formasdePagamento.html" class="white-text"
               style="margin-left: 45px"><span>Formas de
                 Pagamento</span></a></div>
-          <div class="collapsible-body blue"><a href="./Cadastros/contasBancarias.html" class="white-text"
+          <div class="collapsible-body blue"><a href="../Cadastros/contasBancarias.html" class="white-text"
               style="margin-left: 45px"><span>Contas
                 Bancárias</span></a></div>
         </li>
@@ -77,17 +77,17 @@
           <div class="collapsible-header" style="margin-left: 15px"><i
               class="material-icons blue-text">timeline</i>Movimentos
           </div>
-          <div class="collapsible-body blue"><a href="./Movimentos/escolhaContas.html" class="white-text"
+          <div class="collapsible-body blue"><a href="../Movimentos/escolhaContas.html" class="white-text"
               style="margin-left: 45px"><span>Contas a
                 Receber</span></a></div>
-          <div class="collapsible-body blue"><a href="./Movimentos/escolhaPagar.html" class="white-text"
+          <div class="collapsible-body blue"><a href="../Movimentos/escolhaPagar.html" class="white-text"
               style="margin-left: 45px"><span>Contas a
                 Pagar</span></a></div>
-          <div class="collapsible-body blue"><a href="./Movimentos/tesouraria.html" class="white-text"
+          <div class="collapsible-body blue"><a href="../Movimentos/tesouraria.html" class="white-text"
               style="margin-left: 45px"><span>Tesouraria</span></a></div>
         </li>
         <li>
-          <a href="./Relatorios/RelatorioContaReceber.html">Relatórios<i
+          <a href="../Relatorios/RelatorioContaReceber.html">Relatórios<i
               class="material-icons blue-text">library_books</i></a>
         </li>
         <li>
@@ -100,7 +100,56 @@
   <!-- FIM HEADER -->
 
   <!-- MAIN -->
-  <main class="blue accent-3"></main>
+  <main class="blue accent-3 center">
+    <div class="card" style="width: 40%; margin-left: 30%; border-radius: 10px">
+      <div class="row">
+        <h3 class="blue-text">Baixa de Contas a Pagar</h3>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="input-field col s8">
+          <input id="emp" type="text">
+          <label for="emp">Empresa</label>
+        </div>
+        <div class="input-field col s8">
+          <input id="cont" type="text">
+          <label for="cont">Conta Caixa/Banco</label>
+        </div>
+        <div class="input-field col s8">
+          <input id="form" type="text">
+          <label for="form">Forma de Pagamento</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="venc" type="text">
+          <label for="venc">Vencimento do Pagamento</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="disp" type="text">
+          <label for="disp">Disponibilidade</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="dtbaixa" type="text">
+          <label for="dtbaixa">Data Baixa</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="ndoc" type="text">
+          <label for="ndoc">Número do Documento</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="valrel" type="text">
+          <label for="valrel">Valor Recebido</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="valR" type="text">
+          <label for="valR">Valor Residual</label>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn">Salvar</button>
+      </div>
+      <div class="row"></div>
+    </div>
+  </main>
   <!-- FIM MAIN -->
 
   <!-- FOOTER -->
